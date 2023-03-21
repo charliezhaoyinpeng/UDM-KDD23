@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <base href="..">
+    <link rel="shortcut icon" type="image/png" href="assets/favicon.png"/>
+    <link rel="stylesheet" type="text/css" media="all" href="assets/main.css"/>
+    <script type="text/javascript" async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=default">
+    </script>
+    <meta name="description" content="Conference Template">
+    <meta name="resource-type" content="document">
+    <meta name="distribution" content="global">
+    <meta name="KeyWords" content="Conference">
+    <title>UDM-AAAI’23 Accepted Papers</title>
+
+    <style>
+        a.btn {background-color: #2471a3; color: #fff; font-size: 12px; margin-top: 4px; display: inline-block; padding: 0 4px; border-radius: 2px; line-height: 1.5em;}
+        a.btn.btn-red {background-color: #d63a3a;}
+        a.btn.btn-red:hover {background-color: #a02727;}
+    </style>
+</head>
+
+<body>
+
+    <div class="banner">
+        <img src="assets/banner-2.jpg" alt="UDM-AAAI’23", width="1000" height="500">
+        <div class="centered">
+            1st AAAI Workshop on Uncertainty Reasoning and Quantification in Decision Making <br><br> February 13th, 2023, Washington DC 
+        </div>
+    </div>
+
+    <table class="navigation">
+        <tr>
+            <td class="navigation">
+                <a title="Workshop Home Page" href=".">Home</a>
+            </td>
+            <td class="navigation">
+                <a title="Call For Papers" href="cfp">Call For Papers</a>
+            </td>
+            <td class="navigation">
+                <a title="Organization" href="organization">Organization</a> 
+            </td>
+            <td class="navigation">
+                <a title="KeyNote" href="keynote">KeyNote</a>
+            </td>
+            <td class="navigation">
+                <a class="current" title="Accepted Papers" href="ap">Accepted Papers</a>
+            </td>
+            <td class="navigation">
+                <a title="Schedule" href="schedule">Schedule</a>
+            </td>
+        </tr>
+    </table>
+
+
+
+    <!-- <h2>To Be Announced.</h2>     -->
+
+    <table>
+        <tr>
+            <td>
+                <h2 style="font-size: 20px">Uncertainty Estimation in Deterministic Vision Transformer</h2> 
+                <strong>Wenqian Ye, Yunsheng Ma, Xu Cao </strong>
+                <a class="btn btn-red" href="assets/papers/3/CameraReady/UDM_AAAI_23_camera_ready.pdf">PDF</a> <br>
+                <u>Abstract</u>: Though Transformers have achieved promising results in many computer vision tasks, they tend to be over-confident in predictions, as the standard Dot Product Self-Attention (DPSA) can barely preserve distance for unbounded input domain. Existing uncertainty quantification approaches, such as Deep Ensemble and MC Dropout, are inapplicable to sizable Vision Transformers, owing to their high computational and memory cost. In this paper, we fill this gap by proposing a novel CoBiLiR Self-Attention module. Specifically, we replace the dot product similarity with the distance within Banach Space and also normalize the term by a theoretical lower bound of the Lipschitz constant. Extensive experiments conducted on standard vision benchmarks demonstrate that our method outperforms the state-of-the-art single forward pass approaches in prediction, calibration, and uncertainty estimation. Our code will be released if accepted.
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <h2 style="font-size: 20px">Detecting Multi-Label Out-of-Distribution Nodes on Graphs</h2>
+                <strong>Ruomeng Ding, Xujiang Zhao, Chen Zhao, Minglai Shao</strong> <br>
+                <!-- <a class="btn btn-red" href="assets/papers/3/CameraReady/UDM_AAAI_23_camera_ready.pdf">PDF</a> <br> -->
+                <u>Abstract</u>: Research and applications involving Out-of-Distribution Detection (OOD) on graph-structured data are proving critical. Existing OOD detection methods on graphs do not apply to multi-label settings. There are other semi-supervised node classification methods that do not distinguish OOD nodes from those in distribution (ID). This paper proposes an Evidence-Based Out-of-Distribution Detection method for multi-label graphs based on Evidential Deep Learning (EDL). The evidence for multiple labels is predicted by Multi-Label Evidential Graph Neural Networks (ML-EGNNs) with Beta Loss. Multi-label opinions are fused using the Joint Belief by comultiplication. As an additional step, we introduce a kernel-based node positive evidence estimation (KNPE) method that is designed to reduce errors in estimating positive evidence. The results of our experiments show that our multi-label OOD detection model is both effective and efficient.
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <h2 style="font-size: 20px">How to Allocate your Label Budget? Choosing between Active Learning and Learning to Reject in Anomaly Detection</h2>
+                <strong>Lorenzo Perini, Daniele Giannuzzi, Jesse Davis</strong> 
+                <a class="btn btn-red" href="assets/papers/6/CameraReady/AAAI_WorkshopUDM23_LorenzoPerini.pdf">PDF</a> <br>
+                <u>Abstract</u>: Anomaly detection attempts at finding examples that deviate from the expected behaviour. Usually, anomaly detection is tackled from an unsupervised perspective because anomalous labels are rare and difficult to acquire. However, the lack of labels makes the anomaly detector have high uncertainty in some regions, which usually results in poor predictive performance or low user trust in the predictions. One can reduce such uncertainty by collecting specific labels using Active Learning (AL), which targets examples close to the detector's decision boundary. Alternatively, one can increase the user trust by allowing the detector to abstain from making highly uncertain predictions, which is called Learning to Reject (LR). One way to do this is by thresholding the detector's uncertainty based on where its performance is low, which requires labels to be evaluated. Although both AL and LR need labels, they work with different types of labels: AL seeks strategic labels, which are evidently biased, while LR requires i.i.d. labels to evaluate the detector's performance and set the rejection threshold. Because one usually has a unique label budget, deciding how to optimally allocate it is challenging. In this paper, we propose a mixed strategy that, given a budget of labels, decides in multiple rounds whether to use the budget to collect AL labels or LR labels. The strategy is based on a reward function that measures the expected gain when allocating the budget to either side. We evaluate our strategy on 18 benchmark datasets and compare it to some baselines.
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <h2 style="font-size: 20px">Few-Shot Out of Domain Intent Detection with Covariance Corrected Mahalanobis Distance</h2>
+                <strong>Jayasimha Talur, Oleg Smirnov, Paul Missault</strong> 
+                <a class="btn btn-red" href="assets/papers/7/CameraReady/aaai23_camera_ready.pdf">PDF</a> <br>
+                <u>Abstract</u>: Conversational agents like chat bots and voice assistants are trained to understand and respond to user intents. On encountering an utterance with an intent different from the ones they have been trained on, these agents are expected to classify the intent as "unknown" or "out of domain". This problem is known as out of domain (OOD) intent detection. Podolskiy et al., showed that Mahalanobis distance can be used effectively for identifying OOD intents, outperforming competing approaches. However, their method fails to beat the baselines in the practically important few-shot setting. In this paper we analyze the reason for low performance and propose a covariance corrected Mahalanobis distance for detecting out-of-domain intents.
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <h2 style="font-size: 20px">Uncertainty-Aware Data Augmentation for Offline Reinforcement Learning</h2>
+                <strong>Yunjie Su, Yilun Kong, Xueqian Wang</strong>
+                <a class="btn btn-red" href="assets/papers/13/CameraReady/UADA.pdf">PDF</a> <br>
+                <u>Abstract</u>: Data augmentation is commonly used to solve the short coverage of the full state-action space problem in Offline RL. However, the existing data augmentation methods for proprioceptive information meets a dilemma where the data coverage is limited by tight constraints, otherwise too aggressive method will hurt the performance. We aim to address the problem by our proposed algorithm Uncertainty-Aware Data Augmentation (UADA), an effective and implementation-wise method. We extend the static offline datasets during training by adding gradient-based perturbation to the state and utilizing the estimated uncertainty of the value function to constrain the range of the gradient. The predictive uncertainty of the value function works as a guidance to adjust the range of augmentation automatically, ensuring the state perturbation adaptive and convincing. We plugged our method into standard offline RL algorithms and evaluated it on several offline reinforcement learning tasks. Empirically, we observe that UADA substantially improves the performance and achieves better model stability.
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <h2 style="font-size: 20px">Knowledge-enhanced Prompt for Open-domain Commonsense Reasoning</h2>
+                <strong>Chen Ling, Xuchao Zhang, Xujiang zhao, Yifeng Wu, Yanchi Liu, Wei Cheng, Haifeng Chen, Zhao Liang</strong>
+                <a class="btn btn-red" href="assets/papers/14/CameraReady/Commonsense_Reasoning___AAAI_UDM.pdf">PDF</a> <br>
+                <u>Abstract</u>: Neural language models for commonsense reasoning often formulate the problem as a QA task and make predictions based on learned representations of language after finetuning or pretraining. However, without providing any training data and pre-defined answer candidates, can neural language models answer commonsense reasoning questions only relying on external knowledge? In this work, we investigate a unique yet challenging problem - open-domain commonsense reasoning that aims to answer questions without providing any answer candidates and finetuning examples. Our proposed method Our method leverages neural language models to iteratively retrieve reasoning chains on the external knowledge base, which does not require task-specific supervision. The reasoning chains can help to identify the most precise answer to the commonsense question and its corresponding knowledge statements to justify the answer choice. We conduct experiments on two commonsense benchmark datasets. Compared to other approaches, our proposed method achieves better performance both quantitatively and qualitatively.
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <h2 style="font-size: 20px">A Batch Bayesian Approach for Bilevel Multi-Objective Decision Making Under Uncertainty</h2>
+                <strong>Vedat Dogan, Steven D Prestwich</strong>
+                <a class="btn btn-red" href="assets/papers/15/CameraReady/Dogan - A Batch Bayesian Approach for Bilevel Multi-objective Decision Making Under Uncertainty.pdf">PDF</a> <br>
+                <u>Abstract</u>: Bilevel multiobjective optimization is a field of mathematical programming representing a nested hierarchical decision making process, with one or more decision makers at each level. These problems appear in many practical applications, solving tasks such as optimal control, process optimization, governmental and game playing strategy development, and transportation. Uncertainty cannot be ignored in these practical problems. We present a hybrid algorithm called BAM- BINO, based on a batch Bayesian approach via expected hyper-volume improvement, that can handle uncertainty at the upper level. Three popular modified benchmark problems with multiple dimensions are used to evaluate its performance under objective noise compared to two popular algorithms in the literature. The results show that BAMBINO is computationally efficient and able to handle upper level uncertainty. We also evaluate the effect of batch size on performance.
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <h2 style="font-size: 20px">Explaining Predictive Uncertainty by Looking Back at Model Explanations</h2>
+                <strong>Hanjie Chen, Wanyu Du, Yangfeng Ji</strong>
+                <a class="btn btn-red" href="assets/papers/16/CameraReady/ExpUnc_AAAI_Workshop.pdf">PDF</a> <br>
+                <u>Abstract</u>: Predictive uncertainty estimation of pre-trained language models is an important measure of how likely people can trust their predictions. However, little is known about what makes a model prediction uncertain. Explaining predictive uncertainty is an important complement to explaining prediction labels in helping users understand model decision making and gaining their trust on model predictions, while has been largely ignored in prior works. In this work, we propose to explain the predictive uncertainty of pre-trained language models by extracting uncertain words from existing model explanations. We find the uncertain words are those identified as making negative contributions to prediction labels, while actually explaining the predictive uncertainty. Experiments show that uncertainty explanations are indispensable to explaining models and helping humans understand model prediction behavior.
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <h2 style="font-size: 20px">SeedBERT: Recovering Annotator Rating Distributions from an Aggregated Label</h2>
+                <strong>Aneesha Sampath, Victoria Lin, Louis-Philippe Morency</strong>
+                <a class="btn btn-red" href="assets/papers/17/CameraReady/SeedBERT-Final.pdf">PDF</a> <br>
+                <u>Abstract</u>: Many machine learning tasks -- particularly those in affective computing -- are inherently subjective. When asked to classify facial expressions or to rate an individual's attractiveness, humans may disagree with one another, and no single answer may be objectively correct. However, machine learning datasets commonly have just one "ground truth" label for each sample, so models trained on these labels may not perform well on tasks that are subjective in nature. Though allowing models to learn from the individual annotators' ratings may help, most datasets do not provide annotator-specific labels for each sample. To address this issue, we propose SeedBERT, a method for recovering annotator rating distributions from a single label by inducing pre-trained models to attend to different portions of the input. Our human evaluations indicate that SeedBERT's attention mechanism is consistent with human sources of annotator disagreement. Moreover, in our empirical evaluations using large language models, SeedBERT demonstrates substantial gains in performance on downstream subjective tasks compared both to standard deep learning models and to other current models that account explicitly for annotator disagreement.
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <h2 style="font-size: 20px">Uncertainty-Aware Reward-based Deep Reinforcement Learning for Intent Analysis of Social Media Information</h2>
+                <strong>Zhen Guo, Qi Zhang, Xinwei An, Qisheng Zhang, Audun Jøsang, Lance Kaplan, Feng Chen, Dong Hyun Jeong, Jin-Hee Cho</strong>
+                <a class="btn btn-red" href="assets/papers/19/CameraReady/Zhen_AAAI23_Workshop.pdf">PDF</a> <br>
+                <u>Abstract</u>: Due to various and serious adverse impacts of spreading fake news, it is often known that only people with malicious intent would propagate fake news. However, it is not necessarily true based on social science studies. Distinguishing the types of fake news spreaders based on their intent is critical because it will effectively guide how to intervene to mitigate the spread of fake news with different approaches. To this end, we propose an intent classification framework that can best identify the correct intent of fake news. We will leverage deep reinforcement learning (DRL) that can optimize the structural representation of each tweet by removing noisy words from the input sequence when appending an actor to the long short-term memory (LSTM) intent classifier. Policy gradient DRL model (e.g., REINFORCE) can lead the actor to a higher delayed reward. We also devise a new uncertainty-aware immediate reward using a subjective opinion that can explicitly deal with multidimensional uncertainty for effective decision-making. Via 600K training episodes from the fake news tweets dataset with an annotated intent class, we evaluate the performance of uncertainty-aware reward in DRL. The results demonstrate that to maintain a high $95\%$ multi-class accuracy, our proposed models effectively and efficiently reduce the number of selected words.
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <h2 style="font-size: 20px">PPO-UE: Proximal Policy Optimization via Uncertainty-Aware Exploration</h2>
+                <strong>Qisheng Zhang, Zhen Guo, Audun Jøsang, Lance Kaplan, Feng Chen, Dong Hyun Jeong, Jin-Hee Cho</strong>
+                <a class="btn btn-red" href="assets/papers/21/CameraReady/Qisheng_AAAI23_Workshop.pdf">PDF</a> <br>
+                <u>Abstract</u>: Proximal Policy Optimization (PPO) is a highly popular policy-based deep reinforcement learning (DRL) approach. However, we observe that the homogeneous exploration process in PPO could cause an unexpected stability issue in the training phase. To address this issue, we propose PPO-UE, a PPO variant equipped with self-adaptive uncertainty-aware explorations (UEs) based on a ratio uncertainty level. The proposed PPO-UE is designed to improve convergence speed and performance with an optimized ratio uncertainty level. Through extensive sensitivity analysis by varying the ratio uncertainty level, our proposed PPO-UE considerably outperforms the baseline PPO in Roboschool continuous control tasks.
+            </td>
+        </tr>
+
+
+
+    </table>
+
+
+
+
+    <footer>
+        Copyright &copy; 2023 All rights reserved
+    </footer>
+
+</body>
+</html>
+
