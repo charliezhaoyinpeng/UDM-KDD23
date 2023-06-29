@@ -55,73 +55,73 @@
 
 
 
-    <h2>To Be Announced.</h2>    
+<!--     <h2>To Be Announced.</h2>     -->
 
-    <!-- <table>
+    <table>
         <tr>
             <td>
-                <h2 style="font-size: 20px">Uncertainty Estimation in Deterministic Vision Transformer</h2> 
-                <strong>Wenqian Ye, Yunsheng Ma, Xu Cao </strong>
-                <a class="btn btn-red" href="assets/papers/3/CameraReady/UDM_AAAI_23_camera_ready.pdf">PDF</a> <br>
-                <u>Abstract</u>: Though Transformers have achieved promising results in many computer vision tasks, they tend to be over-confident in predictions, as the standard Dot Product Self-Attention (DPSA) can barely preserve distance for unbounded input domain. Existing uncertainty quantification approaches, such as Deep Ensemble and MC Dropout, are inapplicable to sizable Vision Transformers, owing to their high computational and memory cost. In this paper, we fill this gap by proposing a novel CoBiLiR Self-Attention module. Specifically, we replace the dot product similarity with the distance within Banach Space and also normalize the term by a theoretical lower bound of the Lipschitz constant. Extensive experiments conducted on standard vision benchmarks demonstrate that our method outperforms the state-of-the-art single forward pass approaches in prediction, calibration, and uncertainty estimation. Our code will be released if accepted.
+                <h2 style="font-size: 20px">Knowledge from Uncertainty in Evidential Deep Learning</h2> 
+                <strong>Cai Davies, Marc Roig Vilamala, Alun Preece, Federico Cerutti, Lance Kaplan, Supriyo Chakraborty </strong>
+                <br>
+                <u>Abstract</u>: This work reveals an {\em evidential signal} that emerges from the uncertainty value in Evidential Deep Learning (EDL). EDL is one example of a class of uncertainty-aware deep learning approaches designed to provide confidence (or epistemic uncertainty) about the current test sample. In particular for computer vision and bidirectional encoder large language models, the `evidential signal' arising from the Dirichlet strength in EDL can, in some cases, discriminate between classes, which is particularly strong when using large language models. We hypothesise that the KL regularisation term causes EDL to couple aleatoric and epistemic uncertainty. In this paper, we empirically investigate the correlations between misclassification and evaluated uncertainty, and show that EDL's `evidential signal' is due to misclassification bias. We critically evaluate EDL with other Dirichlet-based approaches, namely Generative Evidential Neural Networks (EDL-GEN) and Prior Networks, and show theoretically and empirically the differences between these loss functions. We conclude that EDL's coupling of uncertainty arises from these differences due to the use (or lack) of out-of-distribution samples during training.
             </td>
         </tr>
 
         <tr>
             <td>
-                <h2 style="font-size: 20px">Detecting Multi-Label Out-of-Distribution Nodes on Graphs</h2>
-                <strong>Ruomeng Ding, Xujiang Zhao, Chen Zhao, Minglai Shao</strong> <br>
-                <a class="btn btn-red" href="assets/papers/3/CameraReady/UDM_AAAI_23_camera_ready.pdf">PDF</a> <br>
-                <u>Abstract</u>: Research and applications involving Out-of-Distribution Detection (OOD) on graph-structured data are proving critical. Existing OOD detection methods on graphs do not apply to multi-label settings. There are other semi-supervised node classification methods that do not distinguish OOD nodes from those in distribution (ID). This paper proposes an Evidence-Based Out-of-Distribution Detection method for multi-label graphs based on Evidential Deep Learning (EDL). The evidence for multiple labels is predicted by Multi-Label Evidential Graph Neural Networks (ML-EGNNs) with Beta Loss. Multi-label opinions are fused using the Joint Belief by comultiplication. As an additional step, we introduce a kernel-based node positive evidence estimation (KNPE) method that is designed to reduce errors in estimating positive evidence. The results of our experiments show that our multi-label OOD detection model is both effective and efficient.
+                <h2 style="font-size: 20px">Uncertainty-aware Grounded Action Transformation towards Sim-to-Real Transfer for Traffic Signal Control</h2>
+                <strong>Longchao Da, Hao Mei, Romir Sharma, Hua Wei </strong> <br>
+                <br>
+                <u>Abstract</u>: Traffic signal control (TSC) is a complex and important task that affects the daily lives of millions of people. Reinforcement Learning (RL) has shown promising results in optimizing traffic signal control, but current RL-based TSC methods are mainly trained in simulation and suffer from the performance gap between simulation and the real world. In this paper, we propose a simulation-to-real-world (sim-to-real) transfer approach called UGAT, which transfers a learned policy trained from a simulated environment to a real-world environment by dynamically transforming actions in the simulation with uncertainty to mitigate the domain gap of transition dynamics. We evaluate our method on a simulated traffic environment and show that it significantly improves the performance of the transferred RL policy in the real world.
             </td>
         </tr>
 
         <tr>
             <td>
-                <h2 style="font-size: 20px">How to Allocate your Label Budget? Choosing between Active Learning and Learning to Reject in Anomaly Detection</h2>
-                <strong>Lorenzo Perini, Daniele Giannuzzi, Jesse Davis</strong> 
-                <a class="btn btn-red" href="assets/papers/6/CameraReady/AAAI_WorkshopUDM23_LorenzoPerini.pdf">PDF</a> <br>
-                <u>Abstract</u>: Anomaly detection attempts at finding examples that deviate from the expected behaviour. Usually, anomaly detection is tackled from an unsupervised perspective because anomalous labels are rare and difficult to acquire. However, the lack of labels makes the anomaly detector have high uncertainty in some regions, which usually results in poor predictive performance or low user trust in the predictions. One can reduce such uncertainty by collecting specific labels using Active Learning (AL), which targets examples close to the detector's decision boundary. Alternatively, one can increase the user trust by allowing the detector to abstain from making highly uncertain predictions, which is called Learning to Reject (LR). One way to do this is by thresholding the detector's uncertainty based on where its performance is low, which requires labels to be evaluated. Although both AL and LR need labels, they work with different types of labels: AL seeks strategic labels, which are evidently biased, while LR requires i.i.d. labels to evaluate the detector's performance and set the rejection threshold. Because one usually has a unique label budget, deciding how to optimally allocate it is challenging. In this paper, we propose a mixed strategy that, given a budget of labels, decides in multiple rounds whether to use the budget to collect AL labels or LR labels. The strategy is based on a reward function that measures the expected gain when allocating the budget to either side. We evaluate our strategy on 18 benchmark datasets and compare it to some baselines.
+                <h2 style="font-size: 20px">Building One-class Detector for Anything: Open-vocabulary Zero-shot OOD Detection Using Text-image Models</h2>
+                <strong>Yunhao Ge, Jie Ren, Jiaping Zhao, Kaifeng Chen, Andrew Gallagher, Laurent Itti, Balaji Lakshminarayanan</strong> 
+                <br>
+                <u>Abstract</u>: We focus on the challenge of out-of-distribution (OOD) detection in deep learning models, a crucial aspect in ensuring reliability. Despite considerable effort, the problem remains significantly challenging in deep learning models due to their propensity to output over-confident predictions for OOD inputs. We propose a novel one-class open-set OOD detector that leverages text-image pre-trained models in a zero-shot fashion and incorporates various descriptions of in-domain and OOD. Our approach is designed to detect anything not in-domain and offers the flexibility to detect a wide variety of OOD, defined via fine- or coarse-grained labels, or even in natural language. We evaluate our approach on challenging benchmarks including large-scale datasets containing fine-grained, semantically similar classes, distributionally shifted images, and multi-object images containing a mixture of in-domain and OOD objects. Our method shows superior performance over previous methods on all benchmarks.
             </td>
         </tr>
 
         <tr>
             <td>
-                <h2 style="font-size: 20px">Few-Shot Out of Domain Intent Detection with Covariance Corrected Mahalanobis Distance</h2>
-                <strong>Jayasimha Talur, Oleg Smirnov, Paul Missault</strong> 
-                <a class="btn btn-red" href="assets/papers/7/CameraReady/aaai23_camera_ready.pdf">PDF</a> <br>
-                <u>Abstract</u>: Conversational agents like chat bots and voice assistants are trained to understand and respond to user intents. On encountering an utterance with an intent different from the ones they have been trained on, these agents are expected to classify the intent as "unknown" or "out of domain". This problem is known as out of domain (OOD) intent detection. Podolskiy et al., showed that Mahalanobis distance can be used effectively for identifying OOD intents, outperforming competing approaches. However, their method fails to beat the baselines in the practically important few-shot setting. In this paper we analyze the reason for low performance and propose a covariance corrected Mahalanobis distance for detecting out-of-domain intents.
+                <h2 style="font-size: 20px">Uncertainty Quantification of Deep Learning for Spatiotemporal Data: Challenges and Opportunities</h2>
+                <strong>Wenchong He, Zhe Jiang</strong> 
+                <br>
+                <u>Abstract</u>: With the advancement of GPS, remote sensing, and computational simulations, large amounts of geospatial and spatiotemporal data are being collected at an increasing speed. Such emerging spatiotemporal big data assets, together with the recent progress of deep learning technologies, provide unique opportunities to transform society. However, it is widely recognized that deep learning sometimes makes unexpected and incorrect predictions with unwarranted confidence, causing severe consequences in high-stake decision-making applications (e.g., disaster management, medical diagnosis, autonomous driving). Uncertainty quantification (UQ) aims to estimate a deep learning model's confidence. This paper provides a brief overview of UQ of deep learning for spatiotemporal data, including its unique challenges and existing methods. We particularly focus on the importance of uncertainty sources. We also identify several future research directions related to spatiotemporal data.
             </td>
         </tr>
 
         <tr>
             <td>
-                <h2 style="font-size: 20px">Uncertainty-Aware Data Augmentation for Offline Reinforcement Learning</h2>
-                <strong>Yunjie Su, Yilun Kong, Xueqian Wang</strong>
-                <a class="btn btn-red" href="assets/papers/13/CameraReady/UADA.pdf">PDF</a> <br>
-                <u>Abstract</u>: Data augmentation is commonly used to solve the short coverage of the full state-action space problem in Offline RL. However, the existing data augmentation methods for proprioceptive information meets a dilemma where the data coverage is limited by tight constraints, otherwise too aggressive method will hurt the performance. We aim to address the problem by our proposed algorithm Uncertainty-Aware Data Augmentation (UADA), an effective and implementation-wise method. We extend the static offline datasets during training by adding gradient-based perturbation to the state and utilizing the estimated uncertainty of the value function to constrain the range of the gradient. The predictive uncertainty of the value function works as a guidance to adjust the range of augmentation automatically, ensuring the state perturbation adaptive and convincing. We plugged our method into standard offline RL algorithms and evaluated it on several offline reinforcement learning tasks. Empirically, we observe that UADA substantially improves the performance and achieves better model stability.
+                <h2 style="font-size: 20px">Delphic Offline Reinforcement Learning under Nonidentifiable Hidden Confounding</h2>
+                <strong>Alizée Pace, Hugo Yèche, Bernhard Schölkopf, Gunnar Ratsch, Tennenholtz Guy</strong>
+                <br>
+                <u>Abstract</u>: A prominent challenge of offline reinforcement learning (RL) is the issue of hidden confounding: unobserved variables may influence both the actions taken by the agent and the observed outcomes. Hidden confounding can compromise the validity of any causal conclusion drawn from data and presents a major obstacle to effective offline RL. In the present paper, we tackle the problem of hidden confounding in the nonidentifiable setting. We propose a definition of uncertainty due to hidden confounding bias, termed delphic uncertainty, which uses variation over world models compatible with the observations, and differentiate it from the well-known epistemic and aleatoric uncertainties. We derive a practical method for estimating the three types of uncertainties, and construct a pessimistic offline RL algorithm to account for them. Our method does not assume identifiability of the unobserved confounders, and attempts to reduce the amount of confounding bias. We demonstrate through extensive experiments and ablations the efficacy of our approach on a sepsis management benchmark, as well as on electronic health records. Our results suggest that nonidentifiable hidden confounding bias can be mitigated to improve offline RL solutions in practice.
             </td>
         </tr>
 
         <tr>
             <td>
-                <h2 style="font-size: 20px">Knowledge-enhanced Prompt for Open-domain Commonsense Reasoning</h2>
-                <strong>Chen Ling, Xuchao Zhang, Xujiang zhao, Yifeng Wu, Yanchi Liu, Wei Cheng, Haifeng Chen, Zhao Liang</strong>
-                <a class="btn btn-red" href="assets/papers/14/CameraReady/Commonsense_Reasoning___AAAI_UDM.pdf">PDF</a> <br>
-                <u>Abstract</u>: Neural language models for commonsense reasoning often formulate the problem as a QA task and make predictions based on learned representations of language after finetuning or pretraining. However, without providing any training data and pre-defined answer candidates, can neural language models answer commonsense reasoning questions only relying on external knowledge? In this work, we investigate a unique yet challenging problem - open-domain commonsense reasoning that aims to answer questions without providing any answer candidates and finetuning examples. Our proposed method Our method leverages neural language models to iteratively retrieve reasoning chains on the external knowledge base, which does not require task-specific supervision. The reasoning chains can help to identify the most precise answer to the commonsense question and its corresponding knowledge statements to justify the answer choice. We conduct experiments on two commonsense benchmark datasets. Compared to other approaches, our proposed method achieves better performance both quantitatively and qualitatively.
+                <h2 style="font-size: 20px">Evaluating Uncertainty Quantification for Bird’s Eye View Semantic Segmentation</h2>
+                <strong>Bowen Yang, Linlin Yu, Tianhao Wang, Changbin Li, Feng Chen</strong>
+                <br>
+                <u>Abstract</u>: The fusion of raw features from multiple sensors (such as stereo cameras, LiDAR, radars) equipped on an autonomous vehicle to create a Bird's Eye View (BEV) representation is an essential and powerful component in planning and controlling systems. Recently, there has been a significant surge of interest in utilizing deep learning models for BEV semantic segmentation. However, being able to anticipate errors in segmentation and improve the explainability of DNNs is crucial to autonomous driving. In this paper, we evaluate various uncertainty quantification methods for BEV semantic segmentation based on two benchmark datasets (CARLA and nuScenes) with two representative backbones (Lift-Splat-Shoot and cross-view transformer). We perform an extensive evaluation of several uncertainty quantification methods. Among these methods, the evidential and postnet methods consistently demonstrate better performance in uncertainty quantification compared to MC dropout, ensemble, and deterministic baseline methods. Additionally, the ensemble method consistently exhibits the best performance in segmentation. We also propose augmenting uncertainty-aware BEV semantic segmentation models with supervised camera-view semantic segmentation features. Through extensive experiments, we consistently observe improvements in both the quality of BEV segmentation and the quality of uncertainty quantification. These findings suggest that exploring different types of supervision holds promise as a direction for enhancing uncertainty-aware BEV segmentation models.
             </td>
         </tr>
 
         <tr>
             <td>
-                <h2 style="font-size: 20px">A Batch Bayesian Approach for Bilevel Multi-Objective Decision Making Under Uncertainty</h2>
-                <strong>Vedat Dogan, Steven D Prestwich</strong>
-                <a class="btn btn-red" href="assets/papers/15/CameraReady/Dogan - A Batch Bayesian Approach for Bilevel Multi-objective Decision Making Under Uncertainty.pdf">PDF</a> <br>
-                <u>Abstract</u>: Bilevel multiobjective optimization is a field of mathematical programming representing a nested hierarchical decision making process, with one or more decision makers at each level. These problems appear in many practical applications, solving tasks such as optimal control, process optimization, governmental and game playing strategy development, and transportation. Uncertainty cannot be ignored in these practical problems. We present a hybrid algorithm called BAM- BINO, based on a batch Bayesian approach via expected hyper-volume improvement, that can handle uncertainty at the upper level. Three popular modified benchmark problems with multiple dimensions are used to evaluate its performance under objective noise compared to two popular algorithms in the literature. The results show that BAMBINO is computationally efficient and able to handle upper level uncertainty. We also evaluate the effect of batch size on performance.
+                <h2 style="font-size: 20px">Uncertainty Mitigation in Multi-layer Supply Chain Using Multiple Reinforcement Learning Agents</h2>
+                <strong>Can Zheng, Xiaowei Jia, Haoyu Wang</strong>
+                <br>
+                <u>Abstract</u>: The global supply chain represents a complex network fraught with opportunities and uncertainties. Today, industries are interwoven inextricably and deeply nested, where even minor risks can be magnified. These risks include unexpected incidents, natural disasters, or anomalous business practices. In such volatile environment, finding a model that optimizes desired outcomes and rapidly responds to risks becomes crucial, not just for individual entities, but for all participants in the supply chain. In this paper, we apply multiple Reinforcement learning agents on multi-level supply chain topology to mitigate the uncertainties. We compare the overall profits and risk management ability of a single agent, multi-level agents in the scenario involving uncertainties from both upstream and downstream participants. By comparing reinforcement learning with heuristic strategy, the results show that the reinforcement learning returns a robuster entity facing with uncertainties.
             </td>
         </tr>
 
-        <tr>
+<!--         <tr>
             <td>
                 <h2 style="font-size: 20px">Explaining Predictive Uncertainty by Looking Back at Model Explanations</h2>
                 <strong>Hanjie Chen, Wanyu Du, Yangfeng Ji</strong>
@@ -155,8 +155,8 @@
                 <a class="btn btn-red" href="assets/papers/21/CameraReady/Qisheng_AAAI23_Workshop.pdf">PDF</a> <br>
                 <u>Abstract</u>: Proximal Policy Optimization (PPO) is a highly popular policy-based deep reinforcement learning (DRL) approach. However, we observe that the homogeneous exploration process in PPO could cause an unexpected stability issue in the training phase. To address this issue, we propose PPO-UE, a PPO variant equipped with self-adaptive uncertainty-aware explorations (UEs) based on a ratio uncertainty level. The proposed PPO-UE is designed to improve convergence speed and performance with an optimized ratio uncertainty level. Through extensive sensitivity analysis by varying the ratio uncertainty level, our proposed PPO-UE considerably outperforms the baseline PPO in Roboschool continuous control tasks.
             </td>
-        </tr>
-    </table> -->
+        </tr> -->
+    </table>
 
 
 
